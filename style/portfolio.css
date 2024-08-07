@@ -205,3 +205,71 @@ footer textarea {
 ::placeholder{
   font-size: 18px;
 }
+
+
+
+
+
+/* mobile responsive */
+
+.hide{
+  display: none;
+}
+
+
+@media screen and (max-width:576px){
+  
+  .skill-container,
+  .resume-container, 
+   footer,
+  .about-items,
+  .banner,
+  nav,
+  nav>ul{
+
+    flex-direction: column;
+  }
+
+  nav>ul{
+    gap: 20px;
+  }
+  .header{
+    background-image: none;
+  }
+  .banner{
+    margin: 20px;
+    width: 100%;
+  }
+  .banner-porfile-pic{
+    width: 100%;
+  }
+  .banner-description{
+    width: 100%;
+    text-align: left;
+  }
+  .btn-primary{
+    margin-bottom: 10px;
+  }
+
+  .banner-content{
+    width: 100%;
+  }
+
+  .footer-column{
+    width: 100%;
+    
+  }
+
+
+  footer, .about{
+    padding: 5px
+  }
+
+  footer input[type="text"], 
+footer input[type="email"], 
+footer textarea{
+  width: calc(100% - 40px);
+}
+  
+}
+
